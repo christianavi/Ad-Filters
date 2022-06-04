@@ -1,0 +1,6 @@
+! Title: Discord Scam Domains by christianavi
+! Version: 0.01
+! Description: Domains including, but not limited to known Discord scam domains
+
+||dicsordnitro.ru^
+||bitzyorg.com^
