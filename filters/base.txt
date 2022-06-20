@@ -1,4 +1,4 @@
-! Title: Ads, Analytics and Trackers Filters by christianavi
+! Title: Base Filters by christianavi
 ! Version: 0.02
 ! Description: Just a few filters that the other filter lists may have missed.
 
