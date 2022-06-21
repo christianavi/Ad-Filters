@@ -1,17 +1,11 @@
 ! Title: Annoyances by christianavi
-! Version: 0.01
+! Version: 0.02
 ! Description: Just a few filters that the other filter lists may have missed.
 
-! Reddit
-reddit.com##._2vEf-C2keJaBMY9qk_BxVn:has-text(Reddit Premium)
-reddit.com##._2zZ-KGHbWWqrwGlHWXR90y:has-text(Get Coins)
-www.reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
-www.reddit.com##a.GCltVwsXPu5lE-gs4Nucu._3fbofimxVp_hpVM6I1TGMS:has-text(Advertise on Reddit)
-www.reddit.com##a[href="/coins"]
-www.reddit.com##a[href="/premium"]
-www.reddit.com##a[href="/powerups"]
+! Calculator Online - https://calculator-online.net/
+calculator-online.net##.goPro
 
-! f1livegp.me
+! F1 Live GP - https://f1livegp.me
 ||krmal.com^$domain=f1livegp.me
 ||juicycelebinfo.com^$domain=f1livegp.me
 ||argerm.com^$domain=f1livegp.me
@@ -25,6 +19,25 @@ f1livegp.me#@#body a[href^="https://trk.bestconvertor.club/"]
 !! Temporary fix for Watch in HD button
 f1livegp.me###banner > div.row > div.container:last-child > div.ev-wrap > div.row:last-child > div.col-md-8.col-md-offset-2.col-xs-12 > div.row:nth-child(3) > div.evsk.col-lg-12.col-xs-12:nth-child(2) > div.d-inline-block.event-block.eviooo.eqcols:last-child > div.watchbox:last-child > div.row:last-child > div.col-sm-6:nth-child(2) > div.pull-left.watch-ll.a-li.watch:last-child
 
+! Facebook
+facebook.com##.sjgh65i0:has-text(Create room)
+
+! Letterboxd
+letterboxd.com##.js-hide-in-app.banner-950.banner [href^="/pro/"]
+letterboxd.com##.js-hide-in-app.banner-230.banner [href^="/pro/"]
+
+! Mediafire
+||fundingchoicesmessages.google.com/f/AGSKWxXrjtEH6OsIEa1eMxJNrJTV18lP5XKGKMJi5rI13IlsGpcs5yT-0hk0wJuzpkaKFvH14rtURv0da3wnJCfhkp8=$domain=mediafire.com
+
+! Reddit
+reddit.com##._2vEf-C2keJaBMY9qk_BxVn:has-text(Reddit Premium)
+reddit.com##._2zZ-KGHbWWqrwGlHWXR90y:has-text(Get Coins)
+reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
+reddit.com##a.GCltVwsXPu5lE-gs4Nucu._3fbofimxVp_hpVM6I1TGMS:has-text(Advertise on Reddit)
+reddit.com##a[href="/coins"]
+reddit.com##a[href="/premium"]
+reddit.com##a[href="/powerups"]
+reddit.com##._2XCnMY85ivEZUL6cAgK0nV
 
 ! Spotify
 spotify.com##.svelte-1x96mcl.mh-message-bar
@@ -34,3 +47,6 @@ www.spotify.com##.llflDJ.sc-ecaa83ee-3
 open.spotify.com##.Upqw01TOXETOmR5Td7Dj.jjUWAm.Button-y0gtbx-0
 open.spotify.com##.wC9sIed7pfp47wZbmU6m:has-text(Upgrade)
 open.spotify.com##.Foyk_HJx16yh22JYmQ56
+
+! YouTube
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
