@@ -1,0 +1,60 @@
+! Title: Annoyances by christianavi
+! Version: 0.03
+! Description: Remove ads and bloat that other filters failed to remove.
+! Homepage: https://github.com/christianavi/Ad-Filters
+
+! Calculator Online - https://calculator-online.net/
+calculator-online.net##+js(nostif, showKrnaYaNi)
+calculator-online.net##.goPro
+
+! F1 Live GP - https://f1livegp.me
+||krmal.com^$domain=f1livegp.me
+||juicycelebinfo.com^$domain=f1livegp.me
+||argerm.com^$domain=f1livegp.me
+||i.imgur.com/ZdqbJmi.png$image
+f1livegp.me###pub_720x90
+f1livegp.me##[href^="https://trk.bestconvertor.club/693c5352-56f9-4013-888d-2bc1da1db5e4"]
+f1livegp.me##.d-lg-block.d-none.col-lg-3
+f1livegp.me##p:has(.dropbtn)
+!! Disable AdGuard Base Filter rule leaving a white dot
+f1livegp.me#@#body a[href^="https://trk.bestconvertor.club/"]
+!! Temporary fix for Watch in HD button
+f1livegp.me###banner > div.row > div.container:last-child > div.ev-wrap > div.row:last-child > div.col-md-8.col-md-offset-2.col-xs-12 > div.row:nth-child(3) > div.evsk.col-lg-12.col-xs-12:nth-child(2) > div.d-inline-block.event-block.eviooo.eqcols:last-child > div.watchbox:last-child > div.row:last-child > div.col-sm-6:nth-child(2) > div.pull-left.watch-ll.a-li.watch:last-child
+
+! Facebook
+facebook.com##.sjgh65i0:has-text(Create room)
+!! Facebook Sponsored ads - For uBlock Origin, disable if using AdGuard.
+facebook.com##[role="feed"] span[id] a[href="#"]:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"]>div):remove()
+
+! Letterboxd
+letterboxd.com##.js-hide-in-app.banner-950.banner [href^="/pro/"]
+letterboxd.com##.js-hide-in-app.banner-230.banner [href^="/pro/"]
+
+! Mediafire
+||fundingchoicesmessages.google.com/f/AGSKWxXrjtEH6OsIEa1eMxJNrJTV18lP5XKGKMJi5rI13IlsGpcs5yT-0hk0wJuzpkaKFvH14rtURv0da3wnJCfhkp8=$domain=mediafire.com
+
+! Reddit
+reddit.com##._2vEf-C2keJaBMY9qk_BxVn:has-text(Reddit Premium)
+reddit.com##._2zZ-KGHbWWqrwGlHWXR90y:has-text(Get Coins)
+reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
+reddit.com##a.GCltVwsXPu5lE-gs4Nucu._3fbofimxVp_hpVM6I1TGMS:has-text(Advertise on Reddit)
+reddit.com##a[href="/coins"]
+reddit.com##a[href="/premium"]
+reddit.com##a[href="/powerups"]
+reddit.com##._2XCnMY85ivEZUL6cAgK0nV
+reddit.com##div._3z4bYCMDgBrJ-Be0By6hNr._1pjbWqnK8P0fDmz8PgLxXY:has-text()
+
+! Spotify
+spotify.com##.svelte-1x96mcl.mh-message-bar
+www.spotify.com##.llflDJ.sc-ecaa83ee-3
+
+!! Spotify - Web Player
+open.spotify.com##.Upqw01TOXETOmR5Td7Dj.jjUWAm.Button-y0gtbx-0
+open.spotify.com##.wC9sIed7pfp47wZbmU6m:has-text(Upgrade)
+open.spotify.com##.Foyk_HJx16yh22JYmQ56
+
+! t.ly URL Shortener
+t.ly##+js(aeld, mouseleave, clientY)
+
+! YouTube
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
