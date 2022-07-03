@@ -1,32 +1,42 @@
 ! Title: Annoyances by christianavi
-! Version: 0.03
+! Version: 0.03.2
 ! Description: Remove ads and bloat that other filters failed to remove.
 ! Homepage: https://github.com/christianavi/Ad-Filters
 
 ! Calculator Online - https://calculator-online.net/
 calculator-online.net##+js(nostif, showKrnaYaNi)
+!! Pro button
 calculator-online.net##.goPro
+
+! Discord - Stable, Public Test Beta, and Canary
+!! Home - Nitro button
+discord.com##.container-32HW5s.localizeBadge-24ZXps.channel-1Shao0
+! discord.com##.container-32HW5s.localizeBadge-24ZXps.channel-1Shao0:remove()
+!! Chat - Gift button
+discord.com##.buttons-uaqb-5 > .grow-2sR_-F.colorBrand-I6CyqQ.lookBlank-21BCro.button-f2h6uQ
+!! Settings Context Menu - Nitro button
+discord.com###user-settings-cog-Discord_Nitro
 
 ! F1 Live GP - https://f1livegp.me
 ||krmal.com^$domain=f1livegp.me
 ||juicycelebinfo.com^$domain=f1livegp.me
 ||argerm.com^$domain=f1livegp.me
 ||i.imgur.com/ZdqbJmi.png$image
+!! Watch Live button
 f1livegp.me###pub_720x90
 f1livegp.me##[href^="https://trk.bestconvertor.club/693c5352-56f9-4013-888d-2bc1da1db5e4"]
+!! Twitch Chat
 f1livegp.me##.d-lg-block.d-none.col-lg-3
 f1livegp.me##p:has(.dropbtn)
-!! Disable AdGuard Base Filter rule leaving a white dot
-f1livegp.me#@#body a[href^="https://trk.bestconvertor.club/"]
-!! Temporary fix for Watch in HD button
-f1livegp.me###banner > div.row > div.container:last-child > div.ev-wrap > div.row:last-child > div.col-md-8.col-md-offset-2.col-xs-12 > div.row:nth-child(3) > div.evsk.col-lg-12.col-xs-12:nth-child(2) > div.d-inline-block.event-block.eviooo.eqcols:last-child > div.watchbox:last-child > div.row:last-child > div.col-sm-6:nth-child(2) > div.pull-left.watch-ll.a-li.watch:last-child
 
 ! Facebook
-facebook.com##.sjgh65i0:has-text(Create room)
 !! Facebook Sponsored ads - For uBlock Origin, disable if using AdGuard.
 facebook.com##[role="feed"] span[id] a[href="#"]:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"]>div):remove()
+!! Create room
+facebook.com##.sjgh65i0:has-text(Create room)
 
 ! Letterboxd
+!! Need an upgrade? banner
 letterboxd.com##.js-hide-in-app.banner-950.banner [href^="/pro/"]
 letterboxd.com##.js-hide-in-app.banner-230.banner [href^="/pro/"]
 
@@ -34,27 +44,45 @@ letterboxd.com##.js-hide-in-app.banner-230.banner [href^="/pro/"]
 ||fundingchoicesmessages.google.com/f/AGSKWxXrjtEH6OsIEa1eMxJNrJTV18lP5XKGKMJi5rI13IlsGpcs5yT-0hk0wJuzpkaKFvH14rtURv0da3wnJCfhkp8=$domain=mediafire.com
 
 ! Reddit
+!! What are you into modal - Test
+reddit.com##._1DK52RbaamLOWw5UPaht_S _199HcTqT2ANvw-1B0onPUa _1acwN_tUhJ8w-n7oCp-Aw3:upward(1)
+!! Reddit Premium on Sidebar
 reddit.com##._2vEf-C2keJaBMY9qk_BxVn:has-text(Reddit Premium)
+!! Get Coins button - Will show up when there is a free award
 reddit.com##._2zZ-KGHbWWqrwGlHWXR90y:has-text(Get Coins)
+!! Advertise button
 reddit.com##._1dBtowHdRHcGyLbVEaOL8t._2I12Htze2UzJmmfnrgYJOn._2zZ-KGHbWWqrwGlHWXR90y
+!! Account dropdown categories
+reddit.com##div._3z4bYCMDgBrJ-Be0By6hNr._1pjbWqnK8P0fDmz8PgLxXY:has-text()
+!! Advertise on Reddit
 reddit.com##a.GCltVwsXPu5lE-gs4Nucu._3fbofimxVp_hpVM6I1TGMS:has-text(Advertise on Reddit)
+!! Account dropdown footer
+reddit.com##._2XCnMY85ivEZUL6cAgK0nV
 reddit.com##a[href="/coins"]
 reddit.com##a[href="/premium"]
 reddit.com##a[href="/powerups"]
-reddit.com##._2XCnMY85ivEZUL6cAgK0nV
-reddit.com##div._3z4bYCMDgBrJ-Be0By6hNr._1pjbWqnK8P0fDmz8PgLxXY:has-text()
+
 
 ! Spotify
+!! Music without limits banner
+spotify.com##.llflDJ.sc-ecaa83ee-3
+!! Locale
 spotify.com##.svelte-1x96mcl.mh-message-bar
-www.spotify.com##.llflDJ.sc-ecaa83ee-3
-
-!! Spotify - Web Player
+! Spotify - Web Player
+!! Upgrade button
 open.spotify.com##.Upqw01TOXETOmR5Td7Dj.jjUWAm.Button-y0gtbx-0
+!! Upgrade to Premium button
 open.spotify.com##.wC9sIed7pfp47wZbmU6m:has-text(Upgrade)
-open.spotify.com##.Foyk_HJx16yh22JYmQ56
+!! Install app
+open.spotify.com##.eNs6P3JYpf2LScgTDHc6.WvLkmOVB2R2vzI2ibR_r
+!! Sign up
+open.spotify.com##.dz_h98rH9nZCwfPdnKgr
 
 ! t.ly URL Shortener
 t.ly##+js(aeld, mouseleave, clientY)
 
 ! YouTube
-youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
+!! More from YouTube
+! youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3):style(border: 3px dotted yellow !important)
+!! YouTube Premium button
+youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:first-child:style(border: 3px dotted yellow !important)
