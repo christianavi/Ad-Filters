@@ -85,4 +85,4 @@ t.ly##+js(aeld, mouseleave, clientY)
 !! More from YouTube
 ! youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3):style(border: 3px dotted yellow !important)
 !! YouTube Premium button
-youtube.com###items > ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:first-child:style(border: 3px dotted yellow !important)
+youtube.com##ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:has-text(YouTube Premium)
