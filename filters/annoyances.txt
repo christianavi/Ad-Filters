@@ -32,6 +32,8 @@ f1livegp.me##p:has(.dropbtn)
 ! Facebook
 !! Facebook Sponsored ads - For uBlock Origin, disable if using AdGuard.
 facebook.com##[role="feed"] span[id] a[href="#"]:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"]>div):remove()
+facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]) [style="display: flex;"] :is([style*="position: absolute"], [style*="display: none"]):remove()
+facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]):not(:has-text(/\d/)):has-text(/[^Vừa\sxong]/):upward([role="feed"]>div):remove()
 !! Create room
 facebook.com##.sjgh65i0:has-text(Create room)
 
