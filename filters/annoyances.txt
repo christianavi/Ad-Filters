@@ -1,5 +1,5 @@
 ! Title: Annoyances by christianavi
-! Version: 0.03.2
+! Version: 0.03.3
 ! Description: Remove ads and bloat that other filters failed to remove.
 ! Homepage: https://github.com/christianavi/Ad-Filters
 
@@ -34,8 +34,13 @@ f1livegp.me##p:has(.dropbtn)
 facebook.com##[role="feed"] span[id] a[href="#"]:not(:has-text(/(\s|\d|^$)/)):upward([role="feed"]>div):remove()
 facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]) [style="display: flex;"] :is([style*="position: absolute"], [style*="display: none"]):remove()
 facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]):not(:has-text(/\d/)):has-text(/[^Vừa\sxong]/):upward([role="feed"]>div):remove()
+facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]) a[href^="?__cft__[0]="][href*="&__tn__=%2CP-R"]:upward([role=feed]>div):remove()
 !! Create room
 facebook.com##.sjgh65i0:has-text(Create room)
+
+! Imgur
+!! Go Ad-Free button
+imgur.com##.Button.EmeraldButton[href="/emerald?source=getAdFreeButtonTopNav"]
 
 ! Letterboxd
 !! Need an upgrade? banner
@@ -44,6 +49,10 @@ letterboxd.com##.js-hide-in-app.banner-230.banner [href^="/pro/"]
 
 ! Mediafire
 ||fundingchoicesmessages.google.com/f/AGSKWxXrjtEH6OsIEa1eMxJNrJTV18lP5XKGKMJi5rI13IlsGpcs5yT-0hk0wJuzpkaKFvH14rtURv0da3wnJCfhkp8=$domain=mediafire.com
+
+! motorsport.com
+!! Sign up modal
+motorsport.com##.msnt-mail-dialog.msnt-mail-dialog--ms
 
 ! Reddit
 !! What are you into modal - Test
