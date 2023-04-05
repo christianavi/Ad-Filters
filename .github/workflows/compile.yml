@@ -3,24 +3,23 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-    - name: Compile filters
-      run: |
-        python compile_filters.py
-    - name: Upload compiled filters as artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: compiled-filters
-        path: filters.txt
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+      - name: Compile filters
+        run: python compile_filters.py
+      - name: Save filters as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: filters
+          path: filters.txt
