@@ -1,7 +1,10 @@
 ! Title: Annoyances by christianavi
-! Version: 0.03.3
+! Version: 0.04.1
 ! Description: Remove ads and bloat that other filters failed to remove.
 ! Homepage: https://github.com/christianavi/Ad-Filters
+
+! Prevent elements from being displayed before every filtered element is blocked
+||$generichide
 
 ! Calculator Online - https://calculator-online.net/
 calculator-online.net##+js(nostif, showKrnaYaNi)
@@ -38,6 +41,13 @@ facebook.com##[role=feed] span[id]>span[class]:first-child+span:not([class]) a[h
 !! Create room
 facebook.com##.sjgh65i0:has-text(Create room)
 
+! Fmovies.to
+!! Ad banner
+fmovies.*##.text-center.mb-4
+||s2.bunnycdn.ru/assets/_bnx/mangafire_7xx.gif
+
+fmovies.*##+js(set, setTimeout, trueFunc)
+
 ! Imgur
 !! Go Ad-Free button
 imgur.com##.Button.EmeraldButton[href="/emerald?source=getAdFreeButtonTopNav"]
@@ -57,8 +67,10 @@ motorsport.com##.msnt-mail-dialog.msnt-mail-dialog--ms
 ! Reddit
 !! What are you into modal - Test
 reddit.com##._1DK52RbaamLOWw5UPaht_S _199HcTqT2ANvw-1B0onPUa _1acwN_tUhJ8w-n7oCp-Aw3:upward(1)
-!! Reddit Premium on Sidebar
-reddit.com##._2vEf-C2keJaBMY9qk_BxVn:has-text(Reddit Premium)
+!! Reddit Premium on Sidebar (Experimental)
+reddit.com##._2vEf-C2keJaBMY9qk_BxVn:nth-of-type(1)
+!! Remove margin-top from remaining elements. Thanks to u/Sonic436342523: https://www.reddit.com/r/uBlockOrigin/comments/12a3svw/comment/jeq8wkf/
+reddit.com##._2vEf-C2keJaBMY9qk_BxVn:nth-of-type(2):style(margin-top: unset !important;)
 !! Get Coins button - Will show up when there is a free award
 reddit.com##._2zZ-KGHbWWqrwGlHWXR90y:has-text(Get Coins)
 !! Advertise button
@@ -69,10 +81,16 @@ reddit.com##div._3z4bYCMDgBrJ-Be0By6hNr._1pjbWqnK8P0fDmz8PgLxXY:has-text()
 reddit.com##a.GCltVwsXPu5lE-gs4Nucu._3fbofimxVp_hpVM6I1TGMS:has-text(Advertise on Reddit)
 !! Account dropdown footer
 reddit.com##._2XCnMY85ivEZUL6cAgK0nV
+!! Useless labels
+reddit.com##._1pjbWqnK8P0fDmz8PgLxXY._3z4bYCMDgBrJ-Be0By6hNr
+
 reddit.com##a[href="/coins"]
 reddit.com##a[href="/premium"]
 reddit.com##a[href="/powerups"]
 
+! Samsung
+!! Subscription modal
+! sdisplaysolutions.samsung.com##.ly-subcribe-email.g-layer-fix-size2
 
 ! Spotify
 !! Music without limits banner
@@ -91,6 +109,10 @@ open.spotify.com##.dz_h98rH9nZCwfPdnKgr
 
 ! t.ly URL Shortener
 t.ly##+js(aeld, mouseleave, clientY)
+
+! uflix.cc
+!! Blue background
+uflix.cc##.layout-skin
 
 ! YouTube
 !! More from YouTube

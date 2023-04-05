@@ -1,0 +1,9 @@
+! Title: Twitter Filters by christianavi
+! Version: 0.1
+! Description: Extension of Annoyances Filter for Twitter. May or may not be for you.
+
+! Doge icon on upper left part of the page as seen on 4/5/2023
+twitter.com##.r-lrvibr.r-6416eg.r-o7ynqc.r-1ny4l3l.r-64el8z.r-19yznuf.r-1loqt21.r-rs99b7.r-1phboty.r-sdzlij.r-42olwf.r-1niwhzg.css-1dbjc4n.css-18t94o4.css-4rbku5 > .r-qvutc0.r-q4m81j.r-bcqeeo.r-rjixqe.r-1777fci.r-b88u0q.r-a023e6.r-37j5jr.r-16y2uox.r-18u37iz.r-6koalj.r-1awozwy.css-901oao
+
+! Annoying fllwrs.com auto tweet on feed.
+twitter.com##.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0:has-text(fllwrs.com):upward(14)
